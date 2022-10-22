@@ -1,0 +1,141 @@
+.section{
+    display: flex;
+    justify-content: space-between;
+}
+body
+{
+    background-color:blanchedalmond;
+}
+
+h1{
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: grey;
+    padding: 0;
+    margin-top: 0;
+
+    
+}
+.menubas{
+    text-decoration: none;
+    color: bisque;
+    padding: 1em;
+    padding-top: 1em;
+    grid-column-start: 3;
+    margin: 0;
+    text-align: center;
+    
+    
+    
+}
+.menu{
+    text-decoration: none;
+    color: bisque;
+    padding: 1em;
+    padding-top: 1em;
+    
+    
+    
+    
+}
+.menu:hover {
+    background-color: bisque;
+    color: grey;
+    
+  }
+.menubas:hover {
+    background-color: bisque;
+    color: grey;
+    
+  }
+
+
+footer{
+    
+    background-color: grey;
+    text-align: center;
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 0;
+    
+}
+
+.container1:active
+{
+    
+    transform:translateX(20em) scale(1.3);
+    
+}
+.container2:active
+{
+    
+    transform:translateX(-20em) scale(1.3);
+    
+}
+.container1{
+    margin: 8em;
+    border-style: solid;
+    background-color: antiquewhite;
+    padding: 1em;
+    overflow-y: scroll;
+}
+.container2{
+    margin: 8em;
+    border-style: solid;
+    background-color: antiquewhite;
+    padding: 1em;
+    overflow-y: scroll;
+}
+.texte{
+    text-decoration: none;
+    color: black;
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+#lab{
+    width: 30px;
+    height: 30px;
+    background:linear-gradient(grey 0%,grey 20%,transparent 21%,transparent 40%,grey 41%,grey 60%,transparent 61%,transparent 80%,grey 81%,grey 100%);
+    margin: 4px;
+    display: none;
+}
+#ch{
+    display: none;
+}
+
+@media screen and (max-width:900px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        right: 0;
+        transform: translate(-1000px, 0);
+        transition: all 0.5s ease;
+    }
+    #ch:checked+.nav{
+        transform: translate(0, 0);
+        transition: all 0.5s ease;
+    }
+    #lab{
+        display: block;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+    .container1{
+        margin: 2em;
+    }
+    .container2{
+        margin: 2em;
+    }
+}
