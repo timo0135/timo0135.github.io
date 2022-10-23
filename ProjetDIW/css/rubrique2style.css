@@ -151,4 +151,9 @@ footer{
     .blanc{
         display: block;
     }
+    .menu{
+        border-bottom-style: solid;
+        border-width: 1%;
+        border-color: bisque;
+    }
 }
