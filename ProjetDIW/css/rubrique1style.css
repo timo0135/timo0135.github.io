@@ -143,4 +143,10 @@ footer{
     .container2{
         margin: 2em;
     }
+    footer{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
 }
