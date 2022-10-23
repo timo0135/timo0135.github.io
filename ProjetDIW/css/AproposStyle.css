@@ -2,7 +2,12 @@ body
 {
     background-color:blanchedalmond;
 }
-h1{
+header{
+    text-align: center;
+    color: grey;
+    padding: 1em;
+}
+.nom{
     font-weight: bold;
     text-align: center;
     margin-bottom: 5em;
