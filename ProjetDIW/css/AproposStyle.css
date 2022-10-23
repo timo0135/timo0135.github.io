@@ -93,6 +93,10 @@ img:active
     padding: 1em;
     overflow-y: scroll;
 }
+.blanc{
+    display: none;
+    height: 70em;
+}
 
 @media screen and (max-width:1000px){
     .nav{
@@ -111,11 +115,8 @@ img:active
     #lab{
         display: block;
     }
-    footer{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
+    .blanc{
+        display: block;
     }
     
 }
