@@ -136,6 +136,10 @@ footer{
 #ch{
     display: none;
 }
+.blanc{
+    display: none;
+    height: 70em;
+}
 
 @media screen and (max-width:1000px){
     .nav{
@@ -158,10 +162,7 @@ footer{
         display: flex;
         flex-direction: column;
     }
-    footer{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        left: 0;
+    .blanc{
+        display: block;
     }
 }
