@@ -89,7 +89,7 @@ img:active
     overflow-y: scroll;
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:1000px){
     .nav{
         display: flex;
         flex-direction: column;
