@@ -106,8 +106,8 @@ footer{
     padding: 0;
 }
 #lab{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background:linear-gradient(grey 0%,grey 20%,transparent 21%,transparent 40%,grey 41%,grey 60%,transparent 61%,transparent 80%,grey 81%,grey 100%);
     margin: 4px;
     display: none;
