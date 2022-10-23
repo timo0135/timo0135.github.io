@@ -9,6 +9,12 @@ body
     background-color:blanchedalmond;
 }
 
+header{
+    text-align: center;
+    color: grey;
+    padding: 1em;
+}
+
 h1{
     text-align: center;
 }
