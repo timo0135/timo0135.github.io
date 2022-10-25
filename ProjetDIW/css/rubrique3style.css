@@ -1,0 +1,146 @@
+.section{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    
+}
+body
+{
+    background-color:blanchedalmond;
+}
+header{
+    color: grey;
+    padding: 1em;
+}
+
+h1{
+    text-align: center;
+}
+
+.nav{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    background-color: grey;
+    padding: 0;
+    margin-top: 0;
+
+    
+}
+.menubas{
+    text-decoration: none;
+    color: bisque;
+    padding: 1em;
+    grid-column-start: 3;
+    margin: 0;
+    text-align: center;
+    
+    
+    
+}
+.menu{
+    text-decoration: none;
+    color: bisque;
+    padding: 1em;
+
+    
+    
+    
+    
+}
+.menu:hover {
+    background-color: bisque;
+    color: grey;
+    transition: 0.3s;
+    
+  }
+.menubas:hover {
+    background-color: bisque;
+    color: grey;
+    transition: 0.3s;
+    
+  }
+
+
+footer{
+    
+    background-color: grey;
+    display:grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    padding: 0;
+    
+}
+
+
+.container1{
+    margin: 5em;
+    border-style: solid;
+    background-color: antiquewhite;
+    padding: 1em;
+    grid-column: 1;
+    grid-row: 1;
+    overflow-y: scroll;
+}
+.container2{
+    margin: 5em;
+    border-style: solid;
+    background-color: antiquewhite;
+    padding: 1em;
+    grid-column: 2;
+    grid-row: 1;
+    overflow-y: scroll;
+}
+.container3{
+    margin: 5em;
+    border-style: solid;
+    background-color: antiquewhite;
+    padding: 1em;
+    grid-column: 1/3;
+    grid-row: 2;
+    overflow-y: scroll;
+}
+
+img{
+    height: 15em;
+    border-style: solid;
+    margin: 1em;
+}
+
+
+.texte{
+    text-align: center;
+}
+
+@media screen and (max-width:1000px){
+    .nav{
+        display: flex;
+        flex-direction: column;
+    }
+    nav{
+        display: inline;
+    }
+    .section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu{
+        border-bottom-style: solid;
+        border-width: 1%;
+        border-color: bisque;
+    }
+    nav:before{
+        content: "__";
+        background:linear-gradient(grey 0%,grey 20%,transparent 21%,transparent 40%,grey 41%,grey 60%,transparent 61%,transparent 80%,grey 81%,grey 100%);
+        padding:1%;
+        font-size: 3em;
+        color: grey;
+    }
+    nav:hover a{
+        display: block;
+        
+    }
+    nav a{
+        display: none;
+    }
+}
